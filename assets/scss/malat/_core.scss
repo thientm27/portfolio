@@ -1,0 +1,42 @@
+/*
+Theme Name: Malat
+Description: Responsive Personal / Portfolio / Resume Template
+Author: Erilisdesign
+Theme URI: https://preview.erilisdesign.com/html/malat/
+Author URI: https://themeforest.net/user/erilisdesign
+Version: 1.3.0
+License: https://themeforest.net/licenses/standard
+
+SASS Stylesheet
+*/
+
+
+// Theme
+
+@import "components/reboot";
+@import "components/typography";
+@import "components/forms";
+@import "components/buttons";
+@import "components/nav";
+@import "components/header";
+@import "components/website-layout";
+@import "components/card";
+@import "components/blocks";
+@import "components/portfolio";
+@import "components/alert";
+@import "components/pagination";
+@import "components/badge";
+@import "components/progress";
+@import "components/list-group";
+@import "components/list";
+@import "components/avatar";
+@import "components/divider";
+@import "components/loader";
+@import "components/icon";
+@import "components/overlay";
+
+
+// Plugins
+
+@import "plugins/featherlight";
+@import "plugins/slick";

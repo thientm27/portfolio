@@ -1,0 +1,11 @@
+//
+// Persio
+// Utilities - _stop-colors.scss
+//
+
+/* Stop Colors */
+@each $color, $value in $theme-colors {
+  .stop-color-#{$color} {
+    stop-color: $value !important;
+  }
+}

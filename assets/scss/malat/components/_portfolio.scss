@@ -1,0 +1,139 @@
+/*------------------------------------------------------
+[Portfolio]
+*/
+
+.portfolio-item {
+	position: relative;
+}
+
+.portfolio-item > a {
+	display: block;
+	position: relative;
+	transition: all .3s ease-out;
+}
+
+.portfolio-item:not(.details-inside) > a:hover {
+	opacity: .95;
+}
+
+.portfolio-item .item-media {
+	position: relative;
+	overflow: hidden;
+	border-radius: .25rem;
+}
+
+.portfolio-item .item-media img {
+	display: block;
+}
+
+.portfolio-item.details-inside .item-media:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 80%;
+	opacity: .75;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#030507+0,030507+100&0+0,0.65+100 */
+	background: -moz-linear-gradient(top, rgba(3,5,7,0) 0%, rgba(3,5,7,0.65) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(3,5,7,0) 0%,rgba(3,5,7,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(3,5,7,0) 0%,rgba(3,5,7,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00030507', endColorstr='#a6030507',GradientType=0 ); /* IE6-9 */
+}
+
+.portfolio-item .item-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	border-radius: .25rem;
+	transition: all .3s ease-out;
+}
+
+.portfolio-item a:hover .item-overlay {
+	opacity: .5;
+}
+
+.portfolio-item .item-details {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	padding: 30px;
+	color: #fff;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+/* Portfolio Filter */
+.portfolio-filter ul {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: -12px;
+	padding: 0;
+	list-style: none;
+}
+
+.portfolio-filter li {
+	padding: 12px;
+}
+
+.portfolio-filter li a {
+	display: block;
+	position: relative;
+	font-weight: 500;
+	font-size: 0.9375rem;
+	line-height: 1.75;
+	color: #252729;
+	cursor: pointer;
+	padding-bottom: .25rem;
+	padding-right: 1.75rem;
+	border-bottom: 2px solid #252729;
+}
+
+.portfolio-filter li a:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 0;
+	border-right: 2px solid transparent;
+	border-right-color: inherit;
+	transition: height .2s ease-out;
+}
+
+.portfolio-filter .active {
+	color: #377dff;
+	border-color: #377dff;
+}
+
+.portfolio-filter .active:before {
+	height: 50%;
+}
+
+.portfolio-filter.style-light li a {
+	color: #fff;
+	border-bottom-color: #fff;
+}
+
+.portfolio-filter.style-light .active {
+	color: #377dff;
+	border-color: #377dff;
+}

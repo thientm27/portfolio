@@ -1,0 +1,60 @@
+/*------------------------------------------------------
+[Reboot]
+*/
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.main-container {
+  clear: both;
+}
+
+.container, .container-fluid {
+  position: relative;
+  z-index: 1;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  padding: $section-padding-y 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 576px) and (max-width: 1469px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1469px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@include media-breakpoint-down(lg){
+  section {
+    padding: $section-padding-y-md 0;
+  }
+}
+
+@media only screen and (min-width: 2560px) and (max-width: 2880px) and (max-height: 5120px) {
+  html {
+    font-size: 19px;
+  }
+}

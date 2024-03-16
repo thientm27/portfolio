@@ -1,0 +1,50 @@
+//
+// Persio
+// Utilities - _background.scss
+//
+
+
+/* Base colors */
+.bg-black {background-color:#000 !important}
+
+@each $color, $value in $theme-colors {
+  @include bg-variant(".bg-#{$color}", $value);
+}
+
+/* Soft colors */
+@each $color, $value in $theme-colors {
+  @include bg-soft-variant(".bg-soft-#{$color}", $value);
+}
+
+/* Grays colors */
+@each $color, $value in $grays {
+  @include bg-grays-variant(".bg-gray-#{$color}", $value);
+}
+
+/* Background size */
+.bg-cover {background-size:cover}
+.bg-contain {background-size:contain}
+.bg-cover,.bg-contain {background-repeat:no-repeat;background-position:center}
+
+/* Background position */
+.bg-top-left {background-position:top left}
+.bg-top-center {background-position:top center}
+.bg-top-right {background-position:top right}
+.bg-center-left {background-position:center left}
+.bg-center {background-position:center}
+.bg-center-right {background-position:center right}
+.bg-bottom-left {background-position:bottom left}
+.bg-bottom-center {background-position:bottom center}
+.bg-bottom-right {background-position:bottom right}
+
+/* Background repeat */
+.bg-repeat {background-repeat:repeat}
+.bg-repeat-x {background-repeat:repeat-x}
+.bg-repeat-y {background-repeat:repeat-y}
+.bg-norepeat {background-repeat:no-repeat}
+
+/* Gradients */
+.bg-gradient-1 {
+  background-color: #ff4136;
+  background-image: linear-gradient(45deg,#ff4136 0,#ff851b 100%)
+}

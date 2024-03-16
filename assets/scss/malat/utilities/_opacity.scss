@@ -1,0 +1,13 @@
+//
+// Persio
+// Utilities - _opacity.scss
+//
+
+/* Opacity */
+
+@for $i from 0 through 100 {
+  $opacity: ($i / 20);
+  .opacity-#{($i*5)} {
+    opacity: $opacity;
+  }
+}

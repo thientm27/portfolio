@@ -1,0 +1,204 @@
+/*------------------------------------------------------
+[Alert]
+*/
+
+.alert {
+	position: relative;
+	padding: 1.25rem 1.25rem;
+	margin-bottom: 1rem;
+	border: 1px solid transparent;
+	border-radius: 0.25rem;
+}
+
+.alert-heading {
+	color: inherit;
+}
+
+.alert-link {
+	font-weight: 400;
+}
+
+.alert-dismissible {
+	padding-right: 4rem;
+}
+
+.alert-dismissible .close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 1.25rem 1.25rem;
+	color: inherit;
+}
+
+.alert-primary {
+	color: $white;
+	background-color: $primary;
+	border-color: $primary;
+}
+
+.alert-primary hr {
+	border-top-color: #0a71e0;
+}
+
+.alert-primary .alert-link {
+	color: #c2e1ff;
+}
+
+.alert-secondary {
+	color: $white;
+	background-color: $secondary;
+	border-color: $secondary;
+}
+
+.alert-secondary hr {
+	border-top-color: #6217b2;
+}
+
+.alert-secondary .alert-link {
+	color: #ddccf4;
+}
+
+.alert-success {
+	color: $white;
+	background-color: $success;
+	border-color: $success;
+}
+
+.alert-success hr {
+	border-top-color: #00b092;
+}
+
+.alert-success .alert-link {
+	color: #cbf5ea;
+}
+
+.alert-info {
+	color: $white;
+	background-color: $info;
+	border-color: $info;
+}
+
+.alert-info hr {
+	border-top-color: #00c8e3;
+}
+
+.alert-info .alert-link {
+	color: #c2f9ff;
+}
+
+.alert-warning {
+	color: $white;
+	background-color: $warning;
+	border-color: $warning;
+}
+
+.alert-warning hr {
+	border-top-color: #edb100;
+}
+
+.alert-warning .alert-link {
+	color: #fff3c2;
+}
+
+.alert-danger {
+	color: $white;
+	background-color: $danger;
+	border-color: $danger;
+}
+
+.alert-danger hr {
+	border-top-color: #d83224;
+}
+
+.alert-danger .alert-link {
+	color: #f8d0ca;
+}
+
+.alert-light {
+	color: $dark;
+	background-color: $light;
+	border-color: $light;
+}
+
+.alert-light hr {
+	border-top-color: #e4ecf7;
+}
+
+.alert-light .alert-link {
+	color: #e6e6e6;
+}
+
+.alert-dark {
+	color: #f6f6f6;
+	background-color: #1e2022;
+	border-color: #1e2022;
+}
+
+.alert-dark hr {
+	border-top-color: #121314;
+}
+
+.alert-dark .alert-link {
+	color: #dddddd;
+}
+
+.alert-black {
+	color: whitesmoke;
+	background-color: black;
+	border-color: black;
+}
+
+.alert-black hr {
+	border-top-color: black;
+}
+
+.alert-black .alert-link {
+	color: gainsboro;
+}
+
+/* Callout */
+.callout {
+	position: relative;
+	padding: 0.75rem 1.25rem;
+	margin-bottom: 1rem;
+	border-width: 1px 1px 1px 0.25rem;
+	border-color: #e7eaf3;
+	border-style: solid;
+	border-radius: 0.25rem;
+}
+
+.callout-primary {
+	border-left-color: $primary;
+}
+
+.callout-secondary {
+	border-left-color: $secondary;
+}
+
+.callout-success {
+	border-left-color: $success;
+}
+
+.callout-info {
+	border-left-color: $info;
+}
+
+.callout-warning {
+	border-left-color: $warning;
+}
+
+.callout-danger {
+	border-left-color: $danger;
+}
+
+.callout-light {
+	border-left-color: $light;
+}
+
+.callout-dark {
+	border-left-color: $dark;
+}
+
+.callout-black {
+	border-left-color: $black;
+}

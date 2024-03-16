@@ -1,0 +1,31 @@
+/*------------------------------------------------------
+[Divider]
+*/
+
+.divider {
+	display: block;
+	margin: 20px 0;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	height: 1px;
+	background-color: rgba(0,0,0,.125);
+}
+
+.divider.divider-alt {
+	width: $divider-width;
+	height: $divider-height;
+	background-color: $divider-bg;
+}
+
+.divider.divider-alt.small {
+	width: $divider-width-sm;
+}
+
+.divider.divider-alt.divider-light {
+	background-color: #fff;
+}
+
+.divider.divider-alt.divider-dark {
+	background-color: #252729;
+}

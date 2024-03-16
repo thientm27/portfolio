@@ -1,0 +1,129 @@
+/*------------------------------------------------------
+[Website Layout]
+*/
+
+.body-overflow-measure {
+  position: relative;
+  height: 200vh;
+}
+
+.page-content {
+  position: relative;
+  background: #fff;
+}
+
+.page-cover {
+	position: relative;
+	overflow: hidden;
+	min-height: 240px;
+}
+
+.page-cover-wrapper-fixed {
+	position: relative;
+	width: 100%;
+	height: inherit;
+}
+
+.page-cover-bg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.page-cover-wrap {
+	position: relative;
+}
+
+.page-cover .cover-letter {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-family: 'Montserrat', Helvetica, sans-serif;
+	font-size: 30vh;
+	line-height: 1;
+	font-weight: 700;
+	color: rgba(0,0,0,.07);
+	z-index: 0;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.page-cover .cover-letter.letter-md {
+	font-size: 50vh;
+}
+
+.page-cover .cover-letter.letter-lg {
+	font-size: 70vh;
+}
+
+.page-cover .cover-letter.letter-xl {
+	font-size: 90vh;
+}
+
+.page-cover .container > *:not(.cover-letter) {
+	position: relative;
+	z-index: 2;
+}
+
+@media (max-width: 700px){
+	.page-cover .cover-letter.letter-md {
+		font-size: 40vh;
+	}
+
+	.page-cover .cover-letter.letter-lg {
+		font-size: 47vh;
+	}
+
+	.page-cover .cover-letter.letter-xl {
+		font-size: 57vh;
+	}
+}
+
+@media (min-height: 640px){
+	.page-cover-wrapper-fixed {
+		position: fixed;
+		max-height: 100vh;
+	}
+}
+
+@media (min-width: 1200px){
+  .page-wrapper {
+    position: relative;
+    width: auto;
+    margin-left: 300px;
+    box-shadow: 0 0 300px rgba(0,0,0,.027), 0 0 27px rgba(0,0,0,.1);
+    z-index: 10;
+  }
+}
+
+@media (min-width: 1200px) and (min-height: 640px){
+	.page-cover-wrapper-fixed {
+		width: auto;
+		left: 300px;
+		right: 0;
+	}
+}
+
+@media only screen and (min-width: 2560px) and (max-width: 2880px) and (max-height: 5120px) {
+	.page-wrapper {
+		margin-left: 20%;
+	}
+
+	.page-cover-wrapper-fixed {
+		left: 20%;
+	}
+}
+
+/* Footer */
+
+.site-footer {
+	position: relative;
+	padding: $section-padding-y 0;
+}

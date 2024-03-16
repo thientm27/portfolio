@@ -1,0 +1,91 @@
+//
+// Buttons
+//
+
+// Base Buttons
+@mixin button-base($color, $background, $hover-background, $active-background, $box-shadow) {
+  color: color-yiq($background);
+  background: $background;
+  border-color: transparent;
+
+  @include hover() {
+    color: color-yiq($hover-background);
+    background: $hover-background;
+    border-color: $hover-background;
+  }
+
+  &:focus,
+  &.focus {
+    color: color-yiq($hover-background);
+    border-color: $hover-background;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle {
+    color: color-yiq($active-background);
+    background-color: $active-background;
+    border-color: $active-background;
+  }
+}
+
+// Soft Buttons
+@mixin button-soft($color, $background, $hover-background, $active-background, $box-shadow) {
+	color: ($color);
+	background: rgba($background, $btn-soft-bg-opacity);
+	border-color: transparent;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      color: $hover-background;
+      background: rgba($hover-background, $btn-soft-hover-bg-opacity);
+      box-shadow: $btn-soft-box-shadow-value rgba($background, $btn-soft-box-shadow-opacity);
+    }
+
+    &.disabled,
+    &:disabled {
+      color: $background;
+      background-color: rgba($background, .1);
+      box-shadow: none;
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active,
+    .show > &.dropdown-toggle {
+      color: $active-background;
+      background: rgba($active-background, $btn-soft-active-bg-opacity);
+    }
+}
+
+// Text Buttons
+@mixin button-text($color, $hover-color) {
+  color: ($color);
+  background: transparent;
+
+  &[href],
+  &[type] {
+    &:hover,
+    &:focus,
+    &:active {
+      color: ($hover-color);
+    }
+  }
+}
+
+// Alternative Buttons
+@mixin button-alternative($color, $hover-color) {
+  color: $color;
+  border-color: $color;
+
+  &[href],
+  &[type] {
+    &:hover,
+    &:focus,
+    &:active {
+      color: $hover-color;
+      border-color: $hover-color;
+    }
+  }
+}
